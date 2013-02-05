@@ -1,0 +1,3 @@
+before_script:
+  - expoer RAILS_ENV=test
+  - bundle exec rake db:create db:migrate --trace
