@@ -1,1 +1,12 @@
 <h1>ようこそ！サンプルホームページへ</h1>
+<div>最新記事の表示</div>
+<div>
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <div><%= post.title %></div>
+      <div><%= post.body %></div>
+    </li>
+    <% end %>
+  </ul>
+</div>
